@@ -1,24 +1,24 @@
-import { useState } from 'react'
-import Header from './components/Header'
-import HeroSection from './components/HeroSection'
-import Footer from './components/Footer'
-import RangeSection from './components/RangeSection'
-import ProductSection from './components/ProductSection'
-import Carosuel from './components/Carosuel'
+import { useState } from "react";
+import Header from "./Header";
+import HeroSection from "./HeroSection";
+import RangeSection from "./RangeSection";
+import Carosuel from "./Carosuel"
+import ProductSection from "./ProductSection";
+import Footer from "./Footer";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-    <Header/>
-    <HeroSection/>
-    <RangeSection/>
-    <ProductSection/>
-    <Carosuel/>
-    <Footer/>
+      <Header />
+      <HeroSection />
+      <RangeSection />
+      <ProductSection />
+      <Carosuel />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

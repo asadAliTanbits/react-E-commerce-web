@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../GlobalComponents/Button'
 
 const HeroSection = () => {
   return (<section
@@ -16,11 +17,12 @@ const HeroSection = () => {
         Discover Our <br />New Collection
       </h1>
       <p className="text-xl font-[Poppins] mb-8">Discover Our New Collection</p>
-      <button
+      <Button title="BUY NOW"/>
+      {/* <button
         className="bg-[#B88E2F] font-[Poppins] text-white font-bold py-4 px-16 max-[768px]:px-8 max-[768px]:py-2"
       >
         BUY NOW
-      </button>
+      </button> */}
     </div>
   </section>
   )

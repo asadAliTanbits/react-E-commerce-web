@@ -7,7 +7,7 @@ const Header = () => {
     <div className="flex items-center">
       <div className=" flex flex-row font-bold text-4xl font=[Poppins] cursor-pointer">
         <img className="h-10 inline" src="./src/assets/Logo.png" alt="" />
-        <h1 className='text-center'>Furniro</h1>
+        <h1 className='text-center p-1'>Furniro</h1>
       </div>
     </div>
     <div className="hidden md:flex">
