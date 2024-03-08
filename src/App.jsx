@@ -1,23 +1,28 @@
-import { useState } from "react";
-import Header from "./Header";
-import HeroSection from "./HeroSection";
-import RangeSection from "./RangeSection";
-import Carosuel from "./Carosuel"
 import ProductSection from "./ProductSection";
-import Footer from "./Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ProductPage from "./ProductPage";
+import Layout from "./layouts";
+import HomePage from "./layouts/HomePage";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <Header />
+    <div id="main">
+      {/* <Header />
       <HeroSection />
       <RangeSection />
-      <ProductSection />
+      <ProductSection />  
       <Carosuel />
-      <Footer />
-    </>
+      <Footer /> 
+      <AxiosTutorial /> */}
+      <Layout>
+        <Routes>
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/shop" element={<ProductSection/>} />
+          <Route path="products/:productId" Component={ProductPage} />
+        </Routes>
+      </Layout>
+      
+    </div>
   );
 }
 

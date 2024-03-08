@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -12,10 +14,10 @@ const Header = () => {
     </div>
     <div className="hidden md:flex">
       <ul className="flex gap-8 cursor-pointer align-center font-medium font-bolder">
-        <li className=""><a href="">Home</a></li>
-        <li className=""><a href="">Shop</a></li>
-        <li className=""><a href="">About</a></li>
-        <li className=""><a href="">Contact</a></li>
+        <li className=""><Link to="/">Home</Link></li>
+        <li className=""><Link to="/shop">Shop</Link></li>
+        <li className=""><AnchorLink href="">About</AnchorLink></li>
+        <li className=""><AnchorLink href="#footer">Contact</AnchorLink></li>
       </ul>
     </div>
     <div className="md:hinden flex items-center gap-4">

@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ProductCards = (props) => {
   return (
-    <>
-      <div className="m-2 h-fit group">
+    <Link to={`/products/${props.productId}`}>
+      <div className="m-2 h-fit group my-4">
         <div className="relative overflow-hidden rounded">
           <img className="h-96 w-full object-contain" src={props.imgUrl} alt="" />
           <div className="absolute h-full w-full bg-black/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
@@ -32,7 +33,7 @@ const ProductCards = (props) => {
           
         </div>
       </div>
-    </>
+    </Link>
   );
 };
 

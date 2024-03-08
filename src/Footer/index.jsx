@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
+    <div id='footer'>
     <hr />
       <footer className="flex flex-col md:flex-row justify-around m-6 p-5">
         <div className="mb-4 w-[40%] md:mb-0 md:ml-6">
